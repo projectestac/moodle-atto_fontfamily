@@ -38,8 +38,8 @@ function atto_fontfamily_params_for_js($elementid, $options, $fpoptions) {
             'Times=Times New Roman, Times, serif',
             'Courier=Courier New, Courier, mono',
             'Georgia=Georgia, Times New Roman, Times, serif',
-            'Verdana=Verdana, Arial, Helvetica, sans-serif',
-            'Geneva=Geneva, Arial, Helvetica, sans-serif');
+            'Verdana=Verdana, Geneva, sans-serif',
+            'Trebuchet=Trebuchet MS, Helvetica, sans-serif');
     } else {
         $avalaiblefonts = array();
         foreach ($possiblefonts as $font) {

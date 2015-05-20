@@ -28,15 +28,12 @@ $ADMIN->add('editoratto', new admin_category('atto_fontfamily', new lang_string(
 
 $settings = new admin_settingpage('atto_fontfamily_settings', new lang_string('settings', 'atto_fontfamily'));
 if ($ADMIN->fulltree) {
-    $default = 'Trebuchet=Trebuchet MS,Verdana,Arial,Helvetica,sans-serif;
-    Arial=arial,helvetica,sans-serif;
-    Courier New=courier new,courier,monospace;
-    Georgia=georgia,times new roman,times,serif;
-    Tahoma=tahoma,arial,helvetica,sans-serif;
-    Times New Roman=times new roman,times,serif;
-    Verdana=verdana,arial,helvetica,sans-serif;
-    Impact=impact;
-    Wingdings=wingdings';
+    $default = 'Arial=Arial, Helvetica, sans-serif;
+Times=Times New Roman, Times, serif;
+Courier=Courier New, Courier, mono;
+Georgia=Georgia, Times New Roman, Times, serif;
+Verdana=Verdana, Geneva, sans-serif;
+Trebuchet=Trebuchet MS, Helvetica, sans-serif;';
     $setting = new admin_setting_configtextarea('atto_fontfamily/fontselectlist',
                                                 get_string('fontselectlist', 'atto_fontfamily'),
                                                 "",
