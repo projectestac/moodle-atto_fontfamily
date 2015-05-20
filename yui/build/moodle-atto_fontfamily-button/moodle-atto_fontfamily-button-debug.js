@@ -39,13 +39,13 @@ Y.namespace('M.atto_fontfamily').Button = Y.Base.create('button', Y.M.editor_att
     initializer: function() {
         var fonts = this.get('avalaiblefonts');
 
-        if (fonts == undefined || fonts.length == 0) {
+        if (fonts === undefined || fonts.length === 0) {
             return;
         }
 
         var items = [];
         Y.Array.each(fonts, function(font) {
-            fonttype = font.split('=');
+            var fonttype = font.split('=');
 
             items.push({
                 text: '<span style="font-family:' + fonttype[1] + ';">' + fonttype[0] + '</span>',

@@ -25,9 +25,8 @@ defined('MOODLE_INTERNAL') || die();
 
 /**
  * Set params for this plugin
- * @param string $elementid
  */
-function atto_fontfamily_params_for_js($elementid, $options, $fpoptions) {
+function atto_fontfamily_params_for_js() {
 
     $fonts = get_config('atto_fontfamily', 'fontselectlist');
     $fonts = str_replace("\r", ';', $fonts);
