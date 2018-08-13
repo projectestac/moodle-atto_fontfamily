@@ -1,7 +1,7 @@
 {
     "moodle-atto_fontfamily-button": {
         "requires": [
-            "node"
+            "moodle-editor_atto-plugin"
         ]
     }
 }
